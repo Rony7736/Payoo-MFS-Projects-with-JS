@@ -24,8 +24,8 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
         const balance = document.getElementById('account-balance').innerText
             
         // step : 5 --> add moneyInput with balance
-        const addMoneyNumber = Number(addMoneyInput)
-        const balanceNumber = Number(balance)
+        const addMoneyNumber = Number(addMoneyInput)    // Number use korle better hoy
+        const balanceNumber = Number(balance)           // Number() er poriborte parseFloat ba parseint o use koa jay
         
         const newBalance = addMoneyNumber + balanceNumber
         console.log(newBalance);
@@ -38,7 +38,7 @@ document.getElementById('btn-add-money').addEventListener('click', function(even
 
     }
     else{
-        alert('Failed to add money! Please input the right Pin ')
+        alert('Failed to add money! Please input the right Pin')
     }
     
 })
