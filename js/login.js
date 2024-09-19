@@ -11,7 +11,10 @@ document.getElementById('btn-login').addEventListener('click', function(event){
 
     // step -3 --> Get the phone number
     const phoneNumber = document.getElementById('phone-number').value
+    const pinNumber = document.getElementById('pin-number').value
+
     console.log(phoneNumber);
+    console.log(pinNumber);
     
     
 })
